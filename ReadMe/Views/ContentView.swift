@@ -47,7 +47,7 @@ struct BookRow: View {
       destination: DetailView(book: book)
     ){
       HStack {
-        Book.Image(title: book.title)
+        Book.Image(title: book.title, width: 80, height: 80)
         
         VStack(alignment: .leading) {
           Text(book.title)

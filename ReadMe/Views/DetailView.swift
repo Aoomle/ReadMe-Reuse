@@ -32,8 +32,12 @@ struct DetailView: View {
   let book: Book
   
     var body: some View {
-      VStack {
-        Book.Image(title: book.title)
+      VStack(alignment: .leading) {
+        Text(book.title)
+          .font(.largeTitle)
+        Text(book.author)
+          .font(.subheadline)
+        Book.Image(title: book.title, width: 300, height: 300)
         Spacer()
       }
     }
